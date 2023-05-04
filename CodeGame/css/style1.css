@@ -10,7 +10,7 @@ html {
 	
 	/*background = gradient + image pattern combo*/
 	background: 
-		linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+		linear-gradient(rgba(196, 102, 0, 0.6), rgba(79, 23, 101, 0.6));
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 	position: relative;
 }
 #msform fieldset {
-	background: white;
+	background: rgb(114, 93, 93);
 	border: 0 none;
 	border-radius: 3px;
 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
