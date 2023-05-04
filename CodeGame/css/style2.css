@@ -1,0 +1,127 @@
+body{
+  width: 95vw;
+  height: 95vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background: var(--bg);
+}
+:root{
+  --bg: #141414;
+  --main-color: #0757b3;
+  --logo-bg: #0c0c0c;
+  --time: 10s;
+  --sec-time: calc(var(--time) / 2);
+  --ter-time: calc(var(--time) / 3);
+  --glow-sizeIn: 2px;
+  --glow-sizeOut: 5px;
+  --glow-colorIn: #0077ff;
+  --glow-colorOut: #0a5ebf;
+  --stroke-w-small: 1;
+  --stroke-w-medium: 2;
+  --stroke-w-big: 5;
+}
+svg{
+  width: 25vw;
+  stroke-linecap: round;
+  transform: rotate(-45deg);
+  stroke: white;
+  fill: none;
+  stroke-miterlimit:10;
+}
+/*-----
+  Neon/Glow effect
+-----*/
+svg circle,
+svg path{
+  filter: 
+    drop-shadow(0px 0px var(--glow-sizeIn) var(--glow-colorIn))
+    drop-shadow(0px 0px var(--glow-sizeOut) var(--glow-colorOut))
+    drop-shadow(0px 0px var(--glow-sizeOut) var(--glow-colorOut))
+    drop-shadow(0px 0px var(--glow-sizeOut) var(--glow-colorOut));
+}
+/*-----
+  Background spin
+-----*/
+.spin{
+  stroke-width:var(--stroke-w-small);
+  stroke-dasharray:104.7239,104.7239;
+}
+#spinMotion{
+  transform-origin: center center;
+  animation: aniSpin var(--sec-time) linear infinite;
+}
+@keyframes aniSpin{
+  to{transform: rotate(-360deg);}
+}
+/*-----
+  Main stroke animation
+-----*/
+	.main{
+    stroke-width:var(--stroke-w-big);
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: hero var(--time) ease infinite;
+}
+@keyframes hero{
+  0%{
+    stroke-dashoffset: 500;
+  }
+  58%{
+    stroke-dashoffset: -150;
+  }
+  60%{
+    stroke-dashoffset: -150;
+  }
+  80%{
+    stroke-dashoffset: 0;
+  }
+  84%{
+    stroke-dashoffset: 500;
+    stroke: var(--stroke-w-big);
+  }
+  85%{
+    stroke-dashoffset: 500;
+    stroke: none;
+  }
+  100%{
+    stroke-dashoffset: 500;
+    stroke: none;
+  }
+}
+/*-----
+  Gears
+-----*/
+.smallGear,
+.bigGear{
+  stroke-width:var(--stroke-w-medium);
+  animation: gear var(--time) ease infinite;
+}
+@keyframes gear{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  60%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+/*-----
+  Big Gear
+-----*/
+.bigGear{
+  stroke-dasharray:100;
+}
+/*-----
+  BG
+-----*/
+.BG{
+  filter: drop-shadow(0px 0px 0px var(--bg));
+  fill: var(--logo-bg);
+  stroke: none;
+}
