@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>Home</title>
+    
   </head>
   <body>
     <!-------------Navigation bar------------->
@@ -21,6 +22,45 @@
           <button onclick="window.location.href = 'ritm.html';" type="button" class="btn-01">RITM</button>
         </div>
       </nav>
+
+      <!-- Landing Page -->
+
+    <section class="container">
+      <div class="cards-container">
+        <div class="row">
+          <div class="card" draggable="true" ondragstart="drag(event)">
+            <img onclick="window.location.href='vm.html'" src="img/Group 10.svg" alt="VM" >
+          </div>
+          <div class="card">
+            <img onclick="window.location.href='vnet.html'" src="img/Group 9.svg" alt="VNET" >
+          </div>
+          <div class="card">
+            <img src="img/Group 11.svg" alt="VM" >
+          </div>
+        </div>
+        <div class="row">
+          <div class="card">
+            <img src="img/Group 15.svg" alt="VM" >
+          </div>
+          <div class="card">
+            <img src="img/Group 16.svg" alt="VM" >
+          </div>
+          <div class="card">
+            <img ondragstart="drag(event)" src="img/Group 24.svg" alt="VM" >
+          </div>
+        </div>
+        </div>
+        <div class="drag-and-summary">
+          <div class="drag-drop-area" ondrop="drop(event)" ondragover="allowDrop(event)">
+            Drag and Drop Here
+          </div>
+          <div class="summary-section">
+            <input type="search" placeholder="search" id="search">
+          </div>
+        </div>
+    </section>
+
+
 
     
     

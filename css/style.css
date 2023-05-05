@@ -1,25 +1,107 @@
 * {
-    box-sizing: border-box;
-  }
-  body {
-    font-size: 14px;
-  }
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
 .btn-01
-  {
-    width: 150px;
-    height: 54px;
-    background: url("../images/v2_64.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    border: 1px solid rgba(0,0,0,1);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    overflow: hidden;
-  }
+{
+  width: 150px;
+  height: 54px;
+  background: url("../images/v2_64.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border: 1px solid rgba(0,0,0,1);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+
+/* Landing Page Css start */
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100;
+  height: 100;
+}
+
+.card {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100;
+  height: 100;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 125%;
+  margin-bottom: 50px;
+}
+
+.drag-and-summary {
+  flex-direction: column;
+}
+
+.drag-drop-area {
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#search {
+  width: 25%;
+  height: 10%;
+  border-radius: 10px;
+  position: absolute;
+  left: 55%;
+  width: 35%;
+  bottom: -25%;
+}
+
+
+/* Landing page css ends  */
