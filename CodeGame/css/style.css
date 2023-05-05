@@ -25,9 +25,16 @@
   }
 
 /* Landing Page Css start */
-  .text {
+  .container .cards-container .text {
     width: 100%;
-    align-items: center;
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    outline: #698681;
+    border: 1px solid black;
+    border-radius: 35px;
+    margin-left: 40px;
+    margin-bottom: 40px;
   }
 
   .container {
@@ -104,6 +111,7 @@
     left: 55%;
     width: 35%;
     bottom: -25%;
+    font-size: 40px;
   }
 
   
