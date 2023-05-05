@@ -25,7 +25,10 @@
   }
 
 /* Landing Page Css start */
-
+  .text {
+    width: 100%;
+    align-items: center;
+  }
 
   .container {
     display: flex;
