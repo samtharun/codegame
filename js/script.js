@@ -1,3 +1,8 @@
+
+
+
+
+
 // // function dragStartHandler(event) {
 // //     event.dataTransfer.setData("text/plain", event.target.id);
 // //   }
@@ -70,6 +75,12 @@
 //         row.classList.remove("hovered");
 //     });
 // });
+
+
+
+
+
+
 
 function allowDrop(even) {
     even.preventDefault();

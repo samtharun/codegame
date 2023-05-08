@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-size: 14px;
 }
-.btn-01
-{
+
+.btn-01 {
   width: 150px;
   height: 54px;
   background: url("../images/v2_64.png");
@@ -16,7 +17,7 @@ body {
   position: relative;
   top: 0px;
   left: 0px;
-  border: 1px solid rgba(0,0,0,1);
+  border: 1px solid rgb(0, 0, 0);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -43,10 +44,28 @@ body {
   height: 100;
 }
 
+.text{
+  font-family: 'PT Serif', serif;
+  outline: #698681;
+}
+
+
+.container .cards-container .text {
+width: 100%;
+text-align: center;
+display: inline-block;
+font-size: 50px;
+outline: #698681;
+border: 1px solid rgb(148, 148, 148);
+border-radius: 35px;
+margin-left: 40px;
+margin-bottom: 40px;
+}
+
 .card {
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   width: 100;
   height: 100;
@@ -82,6 +101,7 @@ body {
 .summary-section {
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 20px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
