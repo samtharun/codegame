@@ -105,14 +105,21 @@
   }
   
   #search {
-    width: 35%;
-    height: 10%;
+    width: 25%;
+    height: 5%;
     border-radius: 15px;
     position: absolute;
-    left: 57%;
-    bottom: -25%;
+    left: 64rem;
+    bottom: 22%;
     font-size: 40px;
   }
 
-  
+  /* Responsiveness */
+
+  @media screen and (max-width: 600px) {
+    
+  }
+
+
+
   /* Landing page css ends  */
