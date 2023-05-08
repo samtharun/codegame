@@ -92,6 +92,7 @@
   .summary-section {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -104,12 +105,11 @@
   }
   
   #search {
-    width: 25%;
-    height: 10%;
-    border-radius: 10px;
-    position: absolute;
-    left: 55%;
     width: 35%;
+    height: 10%;
+    border-radius: 15px;
+    position: absolute;
+    left: 57%;
     bottom: -25%;
     font-size: 40px;
   }
