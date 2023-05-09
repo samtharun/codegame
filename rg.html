@@ -14,13 +14,13 @@
     
     <section class="container">
       <header><img src="img/Group 16.svg" alt="Wolters Kluwer">  Resource groups</header>
-      <form action="#" class="form">
-        <div class="input-box">
+      <form method="post" action="submit.php" class="form" id="form">
+        <div id="head" class="input-box">
           <label>Project details</label>
-          <input type="text" placeholder="Enter Resource Group" required />
+          <input id="rg" type="text" placeholder="Enter Resource Group" required />
         </div>
         
-        <div class="column">
+        <div id="region" class="column">
             <div class="select-box">
               <select>
                 <option hidden>Region</option>
@@ -35,4 +35,24 @@
       </form>
     </section>
 </body>
+<!-- <script>
+  let form = document.getElementById('form')
+
+  
+
+  form.addEventListener('submit',(e) =>{
+    e.preventDefault()
+    let rg = document.getElementById('rg').value
+    let region = document.getElementById('region').value
+
+
+    //localstorage
+
+    localStorage.setItem('rg',rg)
+    localStorage.setItem('region',region)
+
+    alert("Your details are submited")
+    
+  })
+</script> -->
 </html>

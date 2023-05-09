@@ -1,80 +1,43 @@
+document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the form from submitting
 
 
 
-
-
-// // function dragStartHandler(event) {
-// //     event.dataTransfer.setData("text/plain", event.target.id);
-// //   }
-// //   function dragOverHandler(event) {
-// //     event.preventDefault();
-// //   }
-// //   function dropHandler(event) {
-// //     event.preventDefault();
-// //     const data = event.dataTransfer.getData("text/plain");
-// //     const draggableElement = document.getElementById(data);
-// //     const droppableElement = event.target;
-// //     droppableElement.appendChild(draggableElement);
-// //     droppableElement.innerHTML = `<p>Dropped item: ${draggableElement.innerHTML}</p>`;
-// //   }
-// //   const draggableElements = document.querySelectorAll(".draggable");
-// //   draggableElements.forEach((elem) => {
-// //     elem.addEventListener("dragstart", dragStartHandler);
-// //   });
+    // Get the data from the form
+    const rg = document.getElementById('rg').value;
+    const region = document.getElementById('region').value;
 
 
 
+    // Create an object with the data
+    const data = {
+        rg: rg,
+        region: region
+    };
 
 
 
-// // function allowDrop(event) {
-// //     event.preventDefault();
-// //   }
-
-// //   function drag(event) {
-// //     event.dataTransfer.setData("text", event.target.id);
-// //   }
-
-// //   function drop(event) {
-// //     event.preventDefault();
-// //     var data = event.dataTransfer.getData("text");
-// //     var draggedImage = document.getElementById(data);
-// //     event.target.appendChild(draggedImage);
-// //   }
+    // Send the data to the server
+    fetch('/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+        .then(response => {
+            console.log('Data saved successfully');
+        })
+        .catch(error => {
+            console.error('Error saving data:', error);
+        });
+});
 
 
 
 
 
 
-
-
-
-
-
-// const rows = document.querySelector('.row');
-// const dragdroparea = document.getElementsByClassName('.drag-drop-area');
-
-// rows.addEventListener('dragstart', (e)=>{
-//     e.target.className += ' hold';
-// });
-// rows.addEventListener('dragend', ()=>{
-//     e.target.className = 'rows';
-// });
-
-// rows.forEach((row) => {
-//     row.addEventListener("dragover", (e) => {
-//         e.preventDefault();
-//         row.classList.add("hovered");
-//     });
-//     row.addEventListener("dragleave", () => {
-//         row.classList.remove("hovered");
-//     });
-//     row.addEventListener("drop", () => {
-//         row.appendChild(drag-drop-area);
-//         row.classList.remove("hovered");
-//     });
-// });
 
 
 
@@ -95,3 +58,4 @@ function drop(even) {
     var fetchData = even.dataTransfer.getData("text");
     even.target.appendChild(document.getElementById(fetchData));
 }
+

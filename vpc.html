@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    
+    <section class="container">
+      <header><img src="img/Group 41.png" alt="Wolters Kluwer">  VPC</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Project details</label>
+          <input type="text" placeholder="Enter application name" required />
+        </div>
+        <div class="input-box">
+          <label>location</label>
+          <input type="text" placeholder="Enter Region" required />
+        </div>
+        
+        <div class="input-box">
+            <label>Details</label>
+            <div class="column">
+                <div class="select-box">
+                  <select>
+                    <option hidden>select a option</option>
+                    <option>Environment</option>
+                    <option>Developer</option>
+                    <option>QA</option>
+                    <option>production</option>
+                  </select>
+                </div>
+            </div>   
+          </div>
+          <div class="input-box">
+            <label>Subnet</label>
+            <div class="input-box">
+              <label>Edge</label>
+              <div class="column">
+                <input type="text" placeholder="Edge subnet size" required />
+              </div>   
+            </div>
+            <div class="input-box">
+              <label>Core</label>
+              <div class="column">
+                <input type="text" placeholder="Core subnet size" required />
+              </div>   
+            </div>
+            <div class="input-box">
+              <label>BKE</label>
+              <div class="column">
+                <input type="text" placeholder="BKE subnet size" required />
+              </div>   
+            </div>
+            <div class="input-box">
+              <label>DMZ</label>
+              <div class="column">
+                <input type="text" placeholder="DMZ subnet size" required />
+              </div>   
+            </div>
+          </div>
+          
+        <button onclick="window.location.href = 'loading.html';">Submit</button>
+      </form>
+    </section>
+</body>
+</html>

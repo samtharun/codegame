@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    
+    <section class="container">
+      <header><img src="img/image 20.png " alt="Wolters Kluwer">  EC2 Instance</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Instance type</label>
+          <input type="text" placeholder="VM instance type" required />
+        </div>
+        <div class="input-box">
+          <label>Subnet</label>
+        </div>
+        <div class="column">
+          <div class="select-box">
+            <select>
+              <option hidden>select a option</option>
+              <option>Edge</option>
+              <option>Core</option>
+              <option>BKE</option>
+              <option>DMZ</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>security group</label>
+          <input type="text" placeholder="Enter security group" required />
+        </div>
+        
+        <div class="input-box">
+          <label>operating system</label>
+        </div>
+        <div class="column">
+          <div class="select-box">
+            <select>
+              <option hidden>select a option</option>
+              <option>Windows 2019</option>
+              <option>RedHate</option>
+              <option>Kali</option>
+              <option>Ubuntu</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Key Pair</label>
+          <input type="text" placeholder="Enter key pair" required />
+        </div>
+        <button onclick="window.location.href = 'loading.html';">Submit</button>
+      </form>
+    </section>
+</body>
+</html>
